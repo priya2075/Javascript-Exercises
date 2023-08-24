@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    
+<!--
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+    Title: IT8083_EX7Q1_P7460509
+    Desc: Use of Loops to dynamically create a HTML content
+    Author: Priya d/o Manoharan (Student ID: P7460509)
+    Class: DICS1/CE/2022/1
+    Date: 24-July-2022 
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EX7Q1 - Use of Loops</title>
+
+    <script src="script.js" defer></script>
+
+<style type="text/css">
+body {
+    background-color: #f9dbbb;
+}
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.1rem;
+    margin: 10px auto 20px auto;
+}
+#content {
+    width: 600px;
+    height:100%;
+    margin: 100px auto;
+    display: block;
+    border: 1px solid #f9dbbb;
+}
+table {
+    border: 0;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 354px;
+}
+
+th {
+    background-color: #49c2aa;
+    border: 1px solid #444444;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 700;
+}     
+td {    
+    background-color: #fcf3ea;
+    border: 1px solid #444444;
+    text-align: left;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 400;
+}   
+#first td[colspan="2"] {
+    text-align: center;
+}
+#second td[colspan="2"] {
+    padding-right: 13px;
+    text-align: right;
+}
+#addMemBtn, #displayMemRecBtn {
+    padding: 6px;
+    margin: 2px auto;
+    font-weight: 700;
+    border: 1px solid #555;
+    background-color: #49c2aa;
+    cursor: pointer;
+}
+
+#listMemBtn, #clrFromBtn {
+    padding: 6px;
+    margin: 2px auto;
+    font-weight: 700;
+    border: 1px solid #555;
+    background-color: #d178a9;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+   
+        <div id="content" align="center">
+            <h1>Ex7_Q1 <br />Use of Loops to dynamically <br />create a HTML content</h1>
+            <div id="memberTable">
+
+                <table>
+                    <tr>
+                        <td><b>Member ID:</b></td>
+                        <td><input type="text" id="memID" value=""></td>
+                    </tr>
+                    <tr>
+                        <td><b>Member Name:</b></td><td>
+                            <input type="text" id="memName" value=""></td>
+                    </tr>
+                    <tr>
+                        <td><b>Date of Birth:</b></td>
+                        <td><input type="text" id="memDob" value=""></td>
+                    </tr>
+                    <tr>
+                        <td><b>Address:</b></td>
+                        <td><input type="text" id="memAddr" value=""></td>
+                    </tr>
+                    <tr>
+                        <td><b>Member Mobile No:</b></td>
+                        <td><input type="text" id="memMobileNum" value=""></td>
+                    </tr>
+                    <tr id="first">
+                        <td colspan="2">
+                            <button id="addMemBtn" onclick="addMember()">Add Member</button>
+                            <button id="listMemBtn" onclick="listMembers()">List Members</button>    
+                            <button id="displayMemRecBtn">Display Members</button>     
+                        </td>
+                    </tr>
+                    <tr id="second">
+                        <td colspan="2">
+                            <button id="clrFromBtn">Clear Form</button> <!-- as shown on the labsheet 2) screenshot. -->
+                        </td>
+                    </tr>
+                </table>
+                
+                <!-- <hr /> <button id="autoGenMemBtn">Auto Add Member</button> <hr /> -->   
+             
+                
+                <table style='width:600px; margin-top: 20px;' id="target">
+                    <tr>
+                        <th>Member ID</th>
+                        <th>Name</th>
+                        <th>Date Of Birth</th>
+                        <th>Address</th>
+                        <th>Mobile No.</th>
+                    </tr>
+                    <tr>
+                        <td>m000</td>
+                        <td>Chan Chin Swee</td>
+                        <td>12/12/1993</td>
+                        <td>500 Dover Ed</td>
+                        <td>9112 2334</td>
+                    </tr>
+                    <tr>
+                        <td>m001</td>
+                        <td>Valerie Very Swee</td>
+                        <td>11/11/1988</td>
+                        <td>21 Clementi Ed</td>
+                        <td>9887 7665</td>
+                    </tr>
+                </table>
+               
+                
+                    <div id="target"></div> 
+               
+            </div>
+
+        </div>
+
+</body>
+</html>
