@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    
+<!--
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+    Title: IT8083_EX6Q2_P7460509
+    Desc: Add new members
+    Author: Priya d/o Manoharan (Student ID: P7460509)
+    Class: DICS1/CE/2022/1
+    Date: 17-July-2022 
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EX6Q2 - Add new members</title>
+
+    <script src="script.js" defer></script>
+
+<style type="text/css">
+body {
+    background-color: #dfecff;
+}
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.1rem;
+    margin: 100px auto 20px auto;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 354px;
+    margin-bottom: 10px;
+}
+
+th {
+    background-color: #ff9b49;
+    border: 1px solid #444444;
+    text-align: left;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 700;
+}     
+td {    
+    background-color: #acc7f9;
+    border: 1px solid #444444;
+    text-align: left;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 400;
+}   
+#autoGenMemBtn, #listMemBtn {
+    padding: 4px;
+    border: 1px solid #555;
+    background-color: #acc7f9;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+   
+        <div align="center">
+            <h1>Ex6_Q2 <br />Add new members</h1>
+            <div id="memberTable">
+                <table border="1">
+                    <tr>
+                        <td><b>Member ID:</b></td>
+                        <td><input type="text" id="memID" value=""></td>
+                    </tr>
+                    <tr>
+                        <td><b>Member Name:</b></td><td>
+                            <input type="text" id="memName" value=""></td>
+                    </tr>
+                    <tr>
+                        <td><b>Member Mobile No:</b></td>
+                        <td><input type="text" id="memMobileNum" value=""></td>
+                    </tr>
+                </table>
+           
+                    <button id="autoGenMemBtn" onclick="addMember()">Add Member</button>
+                    <button id="listMemBtn" onclick="listMembers()">List Members</button>         
+                
+            <p id="target"></p>
+            </div>
+
+        </div>
+
+</body>
+</html>
